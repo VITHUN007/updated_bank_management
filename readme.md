@@ -46,8 +46,7 @@ ensure python is installed
 
 * Clone or Download this project folder:
 
-git clone : https://github.com/VITHUN007/banking.git
-
+git clone :  https://github.com/VITHUN007/updated_bank_management.git
 
 ### Execution
 

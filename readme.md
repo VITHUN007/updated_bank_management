@@ -2,7 +2,7 @@
 
 This is a console-based bank management system implemented in Python, demonstrating key **Object-Oriented Programming (OOP)** principles such as Abstraction, Encapsulation, Inheritance, and Polymorphism.
 
-##  Features
+## FEATURES
 
 * **User Management:** Prompts the user for a name with input validation.
 * **Account Creation:** Supports opening two types of accounts:
@@ -10,20 +10,19 @@ This is a console-based bank management system implemented in Python, demonstrat
     * **Current Account:** Allows withdrawals up to a defined **overdraft limit**.
 * **Transaction Handling:** Allows for deposits and withdrawals with real-time balance updates.
 * **Interest/Fees Calculation:** A dedicated function to apply month-end interest/fees, demonstrating polymorphism.
-* **Transaction History:** Logs all transactions (deposits, withdrawals, interest) with timestamps and unique IDs.
+* **Transaction History:** Logs all transactions (deposits, withdrawals, interest) with timestamps and unique transaction IDs.
 
-### CONCEPT USED
-OOP Concept used
-
-* **Encapsulation** : bundling data into single unit
+## CONCEPT DEFINITION
+OOP Concept used definition
+* **Encapsulation** : bundling data and method  into single unit
 
 * **Inheritance**:child class allow to uses parentclass
 
 * **Polymorphism** : object to take multiple form depending upon the context used
 
-* **Abstraction** :showing necessary information hiding internal informatio
+* **Abstraction** :showing necessary information hiding internal information
 
-##  Project Structure (OOP Concepts)
+##  PROJECT STRUCTURE(OOP Concepts)
 
 | Class | Type | OOP Concept Demonstrated | Description |
 | :--- | :--- | :--- | :--- |
@@ -35,20 +34,18 @@ OOP Concept used
 
 ---
 
-## 🚀 How to Run
+##  HOW TOO RUN
 
 ### Prerequisites
 
+ensure python is installed     
 * Python --version
 
-ensure python is installed
+ Clone or Download this project folder:
 
+* git clone :  https://github.com/VITHUN007/updated_bank_management.git
 
-* Clone or Download this project folder:
-
-git clone :  https://github.com/VITHUN007/updated_bank_management.git
-
-### Execution
+## EXECUTION
 
 1.  Save the provided code as a Python file (e.g., `main.py`).
 2.  Open your terminal or command prompt.
@@ -63,19 +60,18 @@ git clone :  https://github.com/VITHUN007/updated_bank_management.git
 
 ---
 
-### sample output
+## SAMPLE OUTPUT
+### benjamin's Banking Menu ###
 
-========================================
-      benjamin's Banking Menu
-========================================
-1: Create New Account
-2: Deposit Funds
-3: Withdraw Funds
-4: View Account Balance
-5: View Transaction History
-6: Apply Interest/Fees
-7: Exit
-========================================
+#### 1: Create New Account ####
+#### 2: Deposit Funds ####
+#### 3: Withdraw Funds ####
+#### 4: View Account Balance ####
+#### 5: View Transaction History ####
+#### 6: Apply Interest/Fees ####
+#### 7: Exit ####
+---
+
 Enter your choice (1-7): 1
 
 --- 1. Create New Account ---
@@ -84,18 +80,22 @@ Enter initial deposit amount (e.g., 100.00): $1000
 
  SUCCESS! benjamin opened a Saving Account.
    Your New Account ID is: 1000
+   
 
-========================================
-      benjamin's Banking Menu
-========================================
-1: Create New Account
-2: Deposit Funds
-3: Withdraw Funds
-4: View Account Balance
-5: View Transaction History
-6: Apply Interest/Fees
-7: Exit
-========================================
+   ___
+
+### benjamin's Banking Menu ###
+
+#### 1: Create New Account ####
+#### 2: Deposit Funds ####
+#### 3: Withdraw Funds ####
+#### 4: View Account Balance ####
+#### 5: View Transaction History ####
+#### 6: Apply Interest/Fees ####
+#### 7: Exit ####
+
+---
+
 Enter your choice (1-7): 2
 
 --- 2. Deposit Funds ---
@@ -104,17 +104,21 @@ Enter the Account ID: 1000
 Enter deposit amount: $1000
  Deposit successful. New Balance: $2000.00
 
-========================================
-      benjamin's Banking Menu
-========================================
-1: Create New Account
-2: Deposit Funds
-3: Withdraw Funds
-4: View Account Balance
-5: View Transaction History
-6: Apply Interest/Fees
-7: Exit
-========================================
+ ----
+
+
+### benjamin's Banking Menu ###
+
+#### 1: Create New Account ####
+#### 2: Deposit Funds ####
+#### 3: Withdraw Funds ####
+#### 4: View Account Balance ####
+#### 5: View Transaction History ####
+#### 6: Apply Interest/Fees ####
+#### 7: Exit ####
+
+---
+
 Enter your choice (1-7): 3
 
 --- 3. Withdraw Funds ---
@@ -124,17 +128,21 @@ Current Balance for 1000: $2000.00
 Enter withdrawal amount: $1200
  Withdrawal successful. New Balance: $800.00
 
-========================================
-      benjamin's Banking Menu
-========================================
-1: Create New Account
-2: Deposit Funds
-3: Withdraw Funds
-4: View Account Balance
-5: View Transaction History
-6: Apply Interest/Fees
-7: Exit
-========================================
+ ___
+
+
+### benjamin's Banking Menu ###
+
+#### 1: Create New Account ####
+#### 2: Deposit Funds ####
+#### 3: Withdraw Funds ####
+#### 4: View Account Balance ####
+#### 5: View Transaction History ####
+#### 6: Apply Interest/Fees ####
+#### 7: Exit ####
+
+---
+
 Enter your choice (1-7): 4
 
 --- 4. View Account Balance ---
@@ -142,21 +150,27 @@ Available Account IDs: 1000
 Enter the Account ID: 1000
  Account ID 1000 Balance: $800.00
 
-========================================
-      benjamin's Banking Menu
-========================================
-1: Create New Account
-2: Deposit Funds
-3: Withdraw Funds
-4: View Account Balance
-5: View Transaction History
-6: Apply Interest/Fees
-7: Exit
-========================================
+ ___
+
+
+### benjamin's Banking Menu ###
+
+#### 1: Create New Account ####
+#### 2: Deposit Funds ####
+#### 3: Withdraw Funds ####
+#### 4: View Account Balance ####
+#### 5: View Transaction History ####
+#### 6: Apply Interest/Fees ####
+#### 7: Exit ####
+
+---
+
 Enter your choice (1-7): 5
 
 --- 5. View Transaction History ---
+
 Available Account IDs: 1000
+
 Enter the Account ID: 1000
 
 --- History for Account 1000 ---
@@ -166,17 +180,21 @@ Enter the Account ID: 1000
 
 [2025-10-31 09:22:46] ID: 129145 | Type: WITHDRAW | Amount: $1200.00 | Desc: Withdrawal of 1200.0
 
-======================================
-      benjamin's Banking Menu
-========================================
-1: Create New Account
-2: Deposit Funds
-3: Withdraw Funds
-4: View Account Balance
-5: View Transaction History
-6: Apply Interest/Fees
-7: Exit
-========================================
+___
+
+
+### benjamin's Banking Menu ###
+
+#### 1: Create New Account ####
+#### 2: Deposit Funds ####
+#### 3: Withdraw Funds ####
+#### 4: View Account Balance ####
+#### 5: View Transaction History ####
+#### 6: Apply Interest/Fees ####
+#### 7: Exit ####
+
+---
+
 Enter your choice (1-7): 6
 
 --- 6. Apply Interest/Fees (Run Month-End) ---
@@ -185,17 +203,23 @@ Enter the Account ID: 1000
  Successfully applied $16.00 in interest/fees.
 Current Balance: $816.00
 
-========================================
-      benjamin's Banking Menu
-========================================
-1: Create New Account
-2: Deposit Funds
-3: Withdraw Funds
-4: View Account Balance
-5: View Transaction History
-6: Apply Interest/Fees
-7: Exit
-========================================
+___
+
+
+### benjamin's Banking Menu ###
+
+#### 1: Create New Account ####
+#### 2: Deposit Funds ####
+#### 3: Withdraw Funds ####
+#### 4: View Account Balance ####
+#### 5: View Transaction History ####
+#### 6: Apply Interest/Fees ####
+#### 7: Exit ####
+
+---
+
 Enter your choice (1-7): 7
 
-Thank you, benjamin, for using the Bank System. Goodbye!
+Thank you, benjamin, for using the Bank System. Goodbye! 
+
+---

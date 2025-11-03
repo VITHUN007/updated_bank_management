@@ -27,6 +27,17 @@ class Account(ABC):
 
     def get_balance(self) -> float:
         return self._balance
+    
+    def _record_transaction(self, amount: float, trans_type: str, description: str = ""):
+        transaction = Transaction(
+            account_id=self._account_id,
+            amount=amount,
+            trans_type=trans_type,
+            description=description
+        )
+        transaction.execute(self)
+        self._transactions.append(transaction)
+
 
     def deposit(self, amount: float):
         if amount > 0:
@@ -105,16 +116,6 @@ class CurrentAccount(Account):
 
 class Transaction:
 
-    def _record_transaction(self, amount: float, trans_type: str, description: str = ""):
-        transaction = Transaction(
-            account_id=self._account_id,
-            amount=amount,
-            trans_type=trans_type,
-            description=description
-        )
-        transaction.execute(self)
-        self._transactions.append(transaction)
-
     def __init__(self, account_id: str, amount: float, trans_type: str, description: str):
         self._transaction_id = str(random.randint(100000, 999999))
         self._account_id = account_id
@@ -185,7 +186,8 @@ def handle_account_creation(user: User):
         acc_type = input("Enter account type (Saving/Current): ").lower()
         if acc_type in ['saving', 'current']:
             break
-        print("Invalid type. Please enter 'Saving' or 'Current'.")
+        print("Invalid type. Please enter '" \
+        "Saving' or 'Current'.")
 
     while True:
         try:

@@ -35,7 +35,7 @@ class Account(ABC):
             trans_type=trans_type,
             description=description
         )
-        transaction.execute(self)
+        
         self._transactions.append(transaction)
 
 
@@ -59,11 +59,12 @@ class Account(ABC):
         return self._transactions
 
 class SavingAccount(Account):
-    DEFAULT_INTEREST_RATE = 0.02
 
+    DEFAULT_INTEREST_RATE = 0.02
     def __init__(self, initial_deposit: float):
-        self._interest_rate = SavingAccount.DEFAULT_INTEREST_RATE
         super().__init__(initial_deposit)
+        self._interest_rate = SavingAccount.DEFAULT_INTEREST_RATE
+        
 
     def withdraw(self, amount: float) -> bool:
         if amount <= 0:
@@ -186,8 +187,7 @@ def handle_account_creation(user: User):
         acc_type = input("Enter account type (Saving/Current): ").lower()
         if acc_type in ['saving', 'current']:
             break
-        print("Invalid type. Please enter '" \
-        "Saving' or 'Current'.")
+        print("Invalid type. Please enter '"  "Saving' or 'Current'.")
 
     while True:
         try:
